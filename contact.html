@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT ME</title>
+    <link rel="icon" href="/images/contact image.PNG" type="image/icon type" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    
+
+    <script
+      src="https://kit.fontawesome.com/ab6051d3ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <a href="./index.html" class="navbar-anchor"
+            ><i class="fas fa-home tooltip"
+              ><span class="tooltiptext">HOME</span></i
+            >
+          </a>
+        </li>
+        <li class="navbar-link">
+          <a href="./about.html" class="navbar-anchor"
+            ><i class="fas fa-address-card tooltip"
+              ><span class="tooltiptext">ABOUT</span></i
+            >
+          </a>
+        </li>
+        <li class="navbar-link">
+          <a href="./portfolio.html" class="navbar-anchor"
+            ><i class="fas fa-briefcase tooltip"
+              ><span class="tooltiptext">PORFOLIO</span></i
+            >
+          </a>
+        </li>
+        <li class="navbar-link">
+          <a href="./testimonials.html" class="navbar-anchor"
+            ><i class="fas fa-quote-left tooltip"
+              ><span class="tooltiptext">TESTIMONIALS</span></i
+            >
+          </a>
+        </li>
+        <li class="navbar-link">
+          <a href="./contact.html" class="navbar-anchor"
+            ><i class="fas fa-envelope tooltip"
+              ><span class="tooltiptext">CONTACT ME</span></i
+            >
+          </a>
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <div class="section">
+      <div id="contact">
+        <h1>Let's <span class="headcolor">Talk</span></h1>
+        <div class="contactdetails">
+          <div class="cntctme">
+            <p class="contacticons">
+              <i class="fas fa-phone-alt cnticn"></i> 076 497 1338
+            </p>
+            <p class="contacticons">
+              <i class="fas fa-envelope cnticn"></i>
+              abdulmalikmohamed360@gmail.com
+            </p>
+            <p class="contacticons">
+              <i class="fas fa-map-marker-alt cnticn"></i> Cape Town, South
+              Africa
+            </p>
+          </div>
+
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mjvjywbw"
+            method="POST"
+            target="_blank"
+          >
+            <div class="dsply">
+              <div class="txt">
+                <h3>Send Me An Email</h3>
+                <p>
+                  Feel free to get in touch with me. I am always open to
+                  discussing new projects or creative ideas.
+                </p>
+                <h3>Follow Me</h3>
+                <div class="links">
+                  <a href="https://github.com/abdul-malik360" target="_blank"
+                    ><i class="fab fa-github lbtn"></i
+                  ></a>
+                  <a href="https://codepen.io/abdul-malik360" target="_blank"
+                    ><i class="fab fa-codepen lbtn"></i
+                  ></a>
+                  <a href="https://www.instagram.com/abdul_malik_mohamed/" target="_blank"
+                  ><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+
+              <div class="formstyle">
+                <div class="yourinfo">
+                  <div class="form-group">
+                    <label class="form-labels" for="name">Your Name</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      required
+                      placeholder="Full Name"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-labels" for="email">Your Email</label>
+                    <input
+                      class="form-input"
+                      type="email"
+                      name="email"
+                      id="email"
+                      required
+                      placeholder="example@gmail.com"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-labels" for="contact">Your Number</label>
+                    <input
+                      class="form-input"
+                      type="tel"
+                      name="contact"
+                      id="contact"
+                      required
+                      placeholder="072 123 4567"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-labels" for="message">Your Message</label>
+                  <input
+                    class="form-input msg"
+                    type="text"
+                    name="message"
+                    id="message"
+                    required
+                    placeholder="Type your message here"
+                  />
+                </div>
+                <button class="btn" type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+
+      <div class="contactme">
+        <button class="footerbtn">
+          <a
+            href="/contact.html"
+            target="_blank"
+            class="footerbtntxt"
+            >Let's Work Together</a
+          >
+        </button>
+      </div>
+
+      <div class="footertxt"><i class="far fa-copyright"></i> Made with <i class="far fa-heart"></i> by Abdul-Malik Mohamed</div>
+
+      <div class="flinks">
+        <a href="https://github.com/abdul-malik360" target="_blank"><i class="fab fa-github fbtns"></i></a>
+        <a href="https://codepen.io/abdul-malik360" target="_blank"><i class="fab fa-codepen fbtns"></i></a>
+      </div>
+
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

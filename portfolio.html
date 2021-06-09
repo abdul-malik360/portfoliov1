@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Some of My Work</title>
+    <link rel="icon" href="/images/portfolio image.PNG" type="image/icon type">
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/porfolio.css" />
+    
+
+    <script
+      src="https://kit.fontawesome.com/ab6051d3ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <a href="./index.html" class="navbar-anchor"
+            ><i class="fas fa-home tooltip"><span class="tooltiptext">HOME</span></i> </a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="./about.html" class="navbar-anchor"
+            ><i class="fas fa-address-card tooltip"><span class="tooltiptext">ABOUT</span></i> </a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="./portfolio.html" class="navbar-anchor"
+            ><i class="fas fa-briefcase tooltip"><span class="tooltiptext">PORFOLIO</span></i> </a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="./testimonials.html" class="navbar-anchor"
+            ><i class="fas fa-quote-left tooltip"><span class="tooltiptext">TESTIMONIALS</span></i> </a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="./contact.html" class="navbar-anchor"
+            ><i class="fas fa-envelope tooltip"><span class="tooltiptext">CONTACT ME</span></i> </a
+          >
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div class="fullpage">
+      <div class="section">
+        <div id="portfolio">
+          <div class="placeport">
+            <h1>My <span class="headcolor"> Projects </span></h1>
+          <div class="cards">
+            <div class="card">
+              
+              <div class="content_img">
+                <img class="clickpic"
+                onclick="toggleModal('timeline-modal')"
+                src="/images/click timeline.PNG"
+                alt="" />
+                <div><i class="far fa-eye">See My Timeline</div>
+              </div>
+               
+              <div class="content_img">
+                <img class="clickpic"
+                onclick="toggleModal('testimonial-modal')"
+                src="/images/click testimonials.PNG"
+                alt=""/>
+                <div><i class="far fa-eye">See My Testimonial</div>
+              </div>
+
+              <div class="content_img">
+                <img class="clickpic"
+                onclick="toggleModal('projects-card-modal')"
+                src="/images/click project card.PNG"
+                alt=""/>
+                <div><i class="far fa-eye">See My Projects Card</div>
+              </div>
+
+              <div class="content_img">
+                <img class="clickpic"
+                onclick="toggleModal('sneaker-site-modal')"
+                src="/images/click sneaker site.PNG"
+                alt=""/>
+              <div><i class="far fa-eye">See My Sneaker Site</div>
+              </div>
+
+              <div class="content_img">
+                <img class="clickpic"
+                onclick="toggleModal('add-numbers-modal')"
+                src="/images/my adding numbers.PNG"
+                alt=""/>
+                <div><i class="far fa-eye">See My Adding Numbers Calculator</div>
+              </div>
+
+              <div class="content_img">
+                <img class="clickpic"
+                onclick="toggleModal('temperature-converter-modal')"
+                src="/images/click temperature converter.PNG"
+                alt=""/>
+                <div><i class="far fa-eye">See My Temperature Converter</div>
+              </div>
+
+              <div class="content_img">
+                <img class="clickpic"
+                onclick="toggleModal('contact-form-modal')"
+                src="/images/click contact form.PNG"
+                alt=""/>
+                <div><i class="far fa-eye">See My Contact Form</div>
+              </div>
+
+          <!-- Contact Form Modal -->
+          <div id="contact-form-modal" class="modal">
+            <button onclick="toggleModal('contact-form-modal')"><span class="modalbtn">X</span></button>
+            <img src="/images/my contact form.PNG" alt="PICTURE OF MY CONTACT FORM">
+            <div>
+              <h2>Contact Form</h2>
+            <h3>HTML/CSS</h3>
+            <p>A contact form using Glassmorphism.com and Formspree.</p>
+            <div class="btns">
+              <button class="btn1">
+                <a
+                  href="https://pensive-jepsen-852132.netlify.app/"
+                  target="_blank"
+                  class="btns"
+                  >Live</a
+                >
+              </button>
+              <button class="btn2">
+                <a
+                  href="https://github.com/abdul-malik360/Contact_Form"
+                  target="_blank"
+                  class="btns"
+                  >Github</a
+                >
+              </button>
+            </div>
+          </div>
+            </div>
+          </div>
+          </div>
+          
+          
+          <!-- Add Numbers Modal -->
+          <div id="add-numbers-modal" class="modal">
+            <button  onclick="toggleModal('add-numbers-modal')"><span class="modalbtn">X</span></button>
+            <img src="/images/my adding numbers.PNG" alt="PICTURE OF Addition Calculator">
+            <h2>Addition Calculator</h2>
+            <h3>PYTHON</h3>
+            <p>
+             Defining functions in python to create a program adding numbers
+            </p>
+            <div class="btns">
+              <button class="btn1">
+                <a
+                  href=https://replit.com/@abdulmalik360/tkinter#GUI_Task.py
+                  target="_blank"
+                  class="btns"
+                  >Live</a
+                >
+              </button>
+              <button class="btn2">
+                <a
+                  href="https://github.com/abdul-malik360/tkinter/blob/main/GUI_Task.py"
+                  target="_blank"
+                  class="btns"
+                  >Github</a
+                >
+              </button>
+
+            </div>
+          </div>
+          <!-- Timeline Modal -->
+          <div id="timeline-modal" class="modal">
+            <button onclick="toggleModal('timeline-modal')"><span class="modalbtn">X</span></button>
+            <img src="./images/my timeline.PNG"
+            alt="PICTURE OF MY TIMELINE"/>
+    
+            <div>
+              <h2>Timeline</h2>
+              <h3>HTML/CSS</h3>
+              <p>A timeline of work experience using AOS(Animate On Scroll).</p>
+            </div>
+            <div class="btns">
+              <button class="btn1">
+                <a
+                  href="https://youthful-ride-5ab649.netlify.app/"
+                  target="_blank"
+                  class="btns"
+                  >Live</a
+                >
+              </button>
+              <button class="btn2">
+                <a
+                  href="https://github.com/abdul-malik360/My_Timeline"
+                  target="_blank"
+                  class="btns"
+                  >Github</a
+                  >
+              </button>
+            </div>
+        </div>
+        
+        <!-- Testimonials Modal -->
+        <div id="testimonial-modal" class="modal">
+          <button onclick="toggleModal('testimonial-modal')"><span class="modalbtn">X</span></button>
+          <img src="/images/my testimonials.PNG" alt="PICTURE OF MY TESTIMONIALS">
+          <h2>Testimonials</h2>
+          <h3>HTML/CSS</h3>
+          <p>
+            A testimonial slider using a jQuery plugin called OWL Carousel.
+          </p>
+          <div class="btns">
+            <button class="btn1">
+              <a
+                href="https://confident-poincare-1690a0.netlify.app/"
+                target="_blank"
+                class="btns"
+                >Live</a
+              >
+            </button>
+            <button class="btn2">
+              <a
+                href="https://github.com/abdul-malik360/my_testomonials"
+                target="_blank"
+                class="btns"
+                >Github</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- Projects Card Modal -->
+        <div id="projects-card-modal" class="modal">
+          <button onclick="toggleModal('projects-card-modal')"><span class="modalbtn">X</span></button>
+          <img src="/images/my projects card.PNG" alt="PICTURE OF MY PROJECTS CARD">
+          <h2>Projects Card</h2>
+          <h3>HTML/CSS</h3>
+          <p>
+            A Project Card with links to all my completed projects using
+            Glassmorphism.com.
+          </p>
+          <div class="btns">
+            <button class="btn1">
+              <a
+                href="https://replit.com/@abdulmalik360/Temperature-Converter#main.py"
+                target="_blank"
+                class="btns"
+                >Live</a
+              >
+            </button>
+            <button class="btn2">
+              <a
+                href="https://github.com/abdul-malik360/temperature_converter/blob/main/temp_converter-task.py"
+                target="_blank"
+                class="btns"
+                >Github</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- Temperature Converter Modal -->
+        <div id="temperature-converter-modal" class="modal">
+          <button onclick="toggleModal('temperature-converter-modal')"><span class="modalbtn">X</span></button>
+          <img src="/images/my temperature converter.PNG" alt="PICTURE OF TEMPERATURE CONVERTER">
+          <h2>Temperature Converter</h2>
+          <h3>PYTHON</h3>
+          <p>
+            Defining functions in python to create a program converting temperatures fahrenheit to celcius and vice versa.
+          </p>
+          <div class="btns">
+            <button class="btn1">
+              <a
+                href="https://replit.com/@abdulmalik360/Temperature-Converter#temp_converter-task.py"
+                target="_blank"
+                class="btns"
+                >Live</a
+              >
+            </button>
+            <button class="btn2">
+              <a
+                href="https://github.com/abdul-malik360/temperature_converter/blob/main/temp_converter-task.py"
+                target="_blank"
+                class="btns"
+                >Github</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- Sneaker Site -->
+        <div id="sneaker-site-modal" class="modal">
+          <button class="xclose" onclick="toggleModal('sneaker-site-modal')"><span class="modalbtn">X</span></button>
+          <img src="/images/my sneaker site.PNG" alt="PICTURE OF SNEAKER SITE">
+          <h2>Sneaker Site</h2>
+          <h3>HTML/CSS</h3>
+          <p>
+            A sneaker site implementing the basics of a website
+          </p>
+          <div class="btns">
+            <button class="btn1">
+              <a
+                href="https://affectionate-bose-3983db.netlify.app/"
+                target="_blank"
+                class="btns"
+                >Live</a
+              >
+            </button>
+            <button class="btn2">
+              <a
+                href="https://github.com/abdul-malik360/Sneaker_Site"
+                target="_blank"
+                class="btns"
+                >Github</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+
+      <div class="contactme">
+        <button class="footerbtn">
+          <a
+            href="/contact.html"
+            target="_blank"
+            class="footerbtntxt"
+            >Let's Work Together</a
+          >
+        </button>
+      </div>
+
+      <div class="footertxt"><i class="far fa-copyright"></i> Made with <i class="far fa-heart"></i> by Abdul-Malik Mohamed</div>
+
+      <div class="links">
+        <a href="https://github.com/abdul-malik360" target="_blank"><i class="fab fa-github fbtns"></i></a>
+        <a href="https://codepen.io/abdul-malik360" target="_blank"><i class="fab fa-codepen fbtns"></i></a>
+      </div>
+
+    </div>
+    
+    <script src="scripts.js"></script>
+    <script>
+      function toggleModal(modalID) {
+        document.getElementById(modalID).classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

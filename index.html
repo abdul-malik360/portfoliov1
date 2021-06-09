@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Welcome to My Portfolio</title>
+
+    <link rel="icon" href="/images/home image.PNG" type="image/icon type">
+
+
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/landing.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ab6051d3ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <a href="./index.html" class="navbar-anchor"
+            ><i class="fas fa-home tooltip"><span class="tooltiptext">HOME</span></i> </a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="./about.html" class="navbar-anchor"
+            ><i class="fas fa-address-card tooltip"><span class="tooltiptext">ABOUT</span></i> </a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="./portfolio.html" class="navbar-anchor"
+            ><i class="fas fa-briefcase tooltip"><span class="tooltiptext">PORFOLIO</span></i> </a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="./testimonials.html" class="navbar-anchor"
+            ><i class="fas fa-quote-left tooltip"><span class="tooltiptext">TESTIMONIALS</span></i> </a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="./contact.html" class="navbar-anchor"
+            ><i class="fas fa-envelope tooltip"><span class="tooltiptext">CONTACT ME</span></i> </a
+          >
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div class="fullpage">
+      <div class="section">
+        <div id="homepage" class="page">
+          <div class="homedetails">
+            <h1>Hi! I'm <span id="typed-head" class="headcolor"></span></h1>
+            <p class="homestatement">I'm <span class="typed-text"></span><span class="cursor typing">&nbsp;</span>  </p>
+            
+            <a
+                href="./about.html"
+                class="btntxt"
+                >WELCOME</a
+              >
+              
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+
+        <div class="contactme">
+          <button class="footerbtn">
+            <a
+              href="/contact.html"
+              target="_blank"
+              class="footerbtntxt"
+              >Let's Work Together</a
+            >
+          </button>
+        </div>
+
+        <div class="footertxt"><i class="far fa-copyright"></i> Made with <i class="far fa-heart"></i> by Abdul-Malik Mohamed</div>
+
+        <div class="links">
+          <a href="https://github.com/abdul-malik360" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://codepen.io/abdul-malik360" target="_blank"><i class="fab fa-codepen"></i></a>
+        </div>
+
+      </div>
+
+
+
+    <script src="scripts.js"></script>
+   
+  </body>
+</html>
+
+

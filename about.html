@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something About Me</title>
+    <link rel="icon" href="/images/about image.PNG" type="image/icon type">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    
+
+    <script
+      src="https://kit.fontawesome.com/ab6051d3ab.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="navbar-links">
+      <li class="navbar-link">
+        <a href="./index.html" class="navbar-anchor"
+          ><i class="fas fa-home tooltip"><span class="tooltiptext">HOME</span></i> </a
+        >
+      </li>
+      <li class="navbar-link">
+        <a href="./about.html" class="navbar-anchor"
+          ><i class="fas fa-address-card tooltip"><span class="tooltiptext">ABOUT</span></i> </a
+        >
+      </li>
+      <li class="navbar-link">
+        <a href="./portfolio.html" class="navbar-anchor"
+          ><i class="fas fa-briefcase tooltip"><span class="tooltiptext">PORFOLIO</span></i> </a
+        >
+      </li>
+      <li class="navbar-link">
+        <a href="./testimonials.html" class="navbar-anchor"
+          ><i class="fas fa-quote-left tooltip"><span class="tooltiptext">TESTIMONIALS</span></i> </a
+        >
+      </li>
+      <li class="navbar-link">
+        <a href="./contact.html" class="navbar-anchor"
+          ><i class="fas fa-envelope tooltip"><span class="tooltiptext">CONTACT ME</span></i> </a
+        >
+      </li>
+    </ul>
+    <button class="navbar-button" onclick="toggleNavbar()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+    <div class="section">
+        <div id="about">
+          <div class="aboutdetails">
+            <div class="placeabout">
+              <h1>About <span class="headcolor">Me</span></h1>
+              <div class="myinfo">
+                <img class="mypic" src="/images/MyPic.png" alt="MY PICTURE" />
+                <div><div class="aboutinfo">
+                  <p class="bio">
+                  I'm Abdul-Malik Mohamed, a goal-driven individual who strives to achieve my goals. I
+                  push through my challenges with patience and I try my best to
+                  display what lies within my heart by my actions. I will go above
+                  and beyond when asked to lend a hand. I try to vibrate positive
+                  energy with everybody I meet, I believe that the energy you give
+                  is the energy you get. On a personal level, I'm an outdoors
+                  person, who is a Thalassophile and a Montivagent by heart, so I
+                  love walking on mountains and ending up at the sea.
+                </p>
+                <div class="mydetailsicons">
+                  <div class="detailicons di1">
+                  <p class="mydetails">
+                    <span class="abouticons"
+                      ><i class="fas fa-birthday-cake"> </i></span
+                    > February 2000
+                  </p>
+                  <p class="mydetails">
+                    <span class="abouticons"> <i class="fas fa-flag"></i></span
+                    > South African
+                  </p>
+                  <p class="mydetails">
+                    <span class="abouticons"><i class="fas fa-cog"></i></span
+                    >Aspiring
+                  </p>
+                </div>
+                <div class="detailicons di2">
+                  <p class="mydetails">
+                    <span class="abouticons"
+                      ><i class="fas fa-phone-alt"></i></span
+                    > 076 497 1338
+                  </p>
+                  <p class="mydetails">
+                    <span class="abouticons"
+                      ><i class="fas fa-map-marker-alt"></i></span
+                    > Cape Town, South Africa
+                  </p>
+                  <p class="mydetails">
+                    <span class="abouticons"><i class="far fa-envelope"></i></span
+                    > abdulmalikmohamed360@gmail.com
+                  </p>
+                  </div></div>
+                  <a class="btn" href="/files/CV of Abdul-Malik Mohamed.pdf" download="CV of Abdul-Malik Mohamed"><i class="far fa-arrow-alt-circle-down"></i>Download My CV</a>
+                </div></div>
+              </div></div>
+            
+          </div>
+          <div class="resume">
+            <h3>My Resume</h3>
+            <div class="resbtn">
+              <button class="linebtn ed" onclick="changeExperience('edu')"><i class="fas fa-book-open tooltipres"><span class="tooltiptextres">EDUCATION</span> </i></button>
+              <button class="linebtn wrk" onclick="changeExperience('work')"><i class="fas fa-briefcase tooltipres"><span class="tooltiptextres">WORK</span> </i></button>
+              <button class="linebtn devl" onclick="changeExperience('dev')"><i class="fas fa-award tooltipres"><span class="tooltiptextres">DEVELOPMENT</span> </i></button>
+            </div>
+              
+            <div id="edu" class="about-content active education">
+              <div class="owl-carousel">
+                <div class="input item1" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i> 2017</h6>
+                    <h5>Livingstone High School<i class="fas fa-school"></i> <span class="title">Matric</span></h5>
+                    
+
+                  </div>
+                  
+                  <p class="descrp">Did secular studies, one of my subjects was Art.
+                  </p>
+                </div>
+                <div class="input item2" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i> 2018-2019
+                    </h6>
+                    <h5>Madrasatul Ahlil Quraan<i class="fas fa-school"></i> <span class="title">Hifth</span></h5>
+                  </div>
+                  
+                  <p class="descrp">
+                    Memorized 3 chapters of the Quraan, did a study of Arabic
+                    grammar and morphology and some translation of Arabic to
+                    English
+                  </p>
+                </div>
+                <div class="input item3" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i> 2020
+                    </h6>
+                    <h5>College of Cape Town<i class="fas fa-university"></i> <span class="title">Networking</span></h5>
+                  </div>
+                    
+                    <p class="descrp">
+                        Completed IT essentials course (ITE) and completed the Cisco Certified Network Associate course (CCNA).
+                    </p>
+                  </div>
+                  <div class="input item4" data-aos="zoom-in">
+                    <div class="datentitle">
+                      <h6>
+                        <i class="far fa-calendar-alt"></i> 2021
+                      </h6>
+                      <h5>Life Choices<i class="fas fa-university"></i> <span class="title">Programming</span></h5>
+                    </div>
+                    
+                    <p class="descrp">Aquired the skill of coding. Languages include HTML, CSS, JAVASCRIPT and PYTHON</p>
+                  </div>
+              </div>
+            </div>
+
+            <div  iv id="work" class="about-content workexp">
+              <div class="owl-carousel">
+                <div class="input item5" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i> 2015
+                    </h6>
+                    <h5>Mitchell's Butchery <i class="fas fa-drumstick-bite"></i><span class="title">Casual Worker</span></h5>
+                  </div>
+                  
+                  <p class="descrp">Responsible for a number of tasks including packing freezers, putting products into packaging and onto shelfs, serving customers, packing of products for customers and delivering </p>
+                </div>
+                <div class="input item6" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i> 2016–2021
+                    </h6>
+                    <h5>DALVIES/SPREME <i class="fas fa-user-tie"></i><span class="title">Waiter</span></h5>
+                  </div>
+                  
+                  <p class="descrp">
+                    Décor of venue.
+                    Providing excellent wait service to ensure client satisfaction. Delivering of food and beverages to guests and share additional
+                    information about the company and what they stand for. Cleaning up after event.
+                  </p>
+                </div>
+                <div class="input item7" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i>2016–2020
+                    </h6>
+                    <h5>TIME PHOTOGRAPHY <i class="fas fa-camera"></i><span class="title">Assistant photographer</span></h5>
+                  </div>
+                 
+                  <p class="descrp">The use of photographic equipment to capture events, objects and people. Setting up lights, stands and props. Frequently
+                    acting as a second shooter.</p>
+                </div>
+                <div class="input item8" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i>2016-2019
+                      
+                    </h6>
+                    <h5>KHUDAAMUL ISLAAM <i class="fas fa-music"></i><span class="title">Events Promotor/Usher</span></h5>
+                  </div>
+                  
+                  <p class="descrp">Generating sales prospects and increasing customer acquisition levels. Directing audience to rest rooms and refreshment stations. Maintaining the entrance area clean
+                    and ejecting audience who are causing trouble.</p>
+                </div>
+                <div class="input item9" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i>2016-2021
+                    </h6>
+                    <h5>QAT MOTORS<i class="fas fa-wrench"></i> <span class="title">Workshop Assistant</span></h5>
+                  </div>
+                  
+                  <p class="descrp">Assist with servicing of vehicles. Packing tools and keeping work area clean. Pick up and delivering of vehicles. Pick up of parts
+                    needed for cars being serviced.</p>
+                </div>
+                <div class="input item10" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i>2020
+                    </h6>
+                    <h5>CAPE ARGUS BICYCLE TOUR <i class="fas fa-bicycle"></i><span class="title">Route Marshal</span></h5>
+                  </div>
+                  
+                  <p class="descrp">To ensure everything is running smoothly. To guide riders, ease their experience, help them avoid any difficulties and help them
+                    safely find their way around the course.</p>
+                </div>
+                <div class="input item11" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i>2018–Present
+                    </h6>
+                    <h5>SUNRISE FARM <i class="fas fa-tractor"></i> <span class="title">Slaughterer</span></h5>
+                  </div>
+                  
+                  <p class="descrp">Part time butcher on a farm.</p>
+                </div>
+              </div>
+            </div>
+            <div id="dev" class="about-content personaldevelopment">
+              <div class="owl-carousel">
+                <div class="input item12" data-aos="zoom-in">
+                  
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i> 2005-2012
+                    </h6>
+                    <h5>Colorado Park Dojo<i class="fas fa-fist-raised"></i><span class="title">Brown Belt</span></h5>
+                    
+                  </div>
+                  
+                  <p class="descrp">Kyokushin Karate</p>
+                </div>
+                <div class="input item13" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i> 2007-present
+                    </h6>
+                    <h5>Rangers Rugby Club<i class="fas fa-football-ball"></i><span class="title">Forward</span></h5>
+                  </div>
+                  
+                  <p class="descrp">best forward 2011-2012</p>
+                </div>
+                <div class="input item14" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i> 2011-2015
+                    </h6>
+                    <h5>MP Eagles Cricket Club <i class="fas fa-baseball-ball"></i><span class="title">All Rounder/ Wicket Keeper</span></h5>
+                  </div>
+                  
+                  <p class="descrp">Spin Bowler came in 5th in the batting row</p>
+                </div>
+                <div class="input item15" data-aos="zoom-in">
+                  <div class="datentitle">
+                    <h6>
+                      <i class="far fa-calendar-alt"></i> 2016 – present
+                    </h6>
+                    <h5><i class="fas fa-hands-helping"></i><span class="title">Volunteer</span></h5>
+                  </div>
+                  
+                  <p class="descrp">Masjidul-Wadood, AMR Youth, MP Youth, A 2 Z Helping Hands</p>
+                </div>
+              </div>
+            </div>
+         </div>
+         <div class="skills">
+            <h3>My Skills</h3>
+            <div class="skillsicons">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="skillicon"><i class="fab fa-html5"></i>HTML </div>
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="skillicon"><i class="fab fa-css3-alt"></i>CSS</div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="skillicon"><i class="fab fa-python"></i>PYTHON</div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="skillicon"><a href="https://www.instagram.com/abdul_malik_mohamed/" target="_blank"><i class="fab fa-instagram"></i></a>PHOTOGRAPHY</div>
+                
+            </div> 
+        </div>
+        <div class="footer">
+
+          <div class="contactme">
+            <button class="footerbtn">
+              <a
+                href="/contact.html"
+                target="_blank"
+                class="footerbtntxt"
+                >Let's Work Together</a
+              >
+            </button>
+          </div>
+
+          <div class="footertxt"><i class="far fa-copyright"></i> Made with <i class="far fa-heart"></i> by Abdul-Malik Mohamed</div>
+  
+          <div class="links">
+            <a href="https://github.com/abdul-malik360" target="_blank"><i class="fab fa-github fbtns"></i></a>
+            <a href="https://codepen.io/abdul-malik360" target="_blank"><i class="fab fa-codepen fbtns"></i></a>
+          </div>
+  
+        </div>
+
+      </div>
+      
+   
+    </script>
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function changeExperience(elementID){
+        let tabs = document.getElementsByClassName("about-content");
+        for (let i = 0; i < tabs.length; i++){
+          tabs[i].classList.remove("active");
+        }
+        document.getElementById(elementID).classList.add("active")
+      }
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 3,
+          margin: 20,
+          loop: true,
+          stagePadding: 50,
+          dots: false,
+          autoplay: true,
+          autoplayTimeout: 10000
+        });
+      });
+    </script>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
+
