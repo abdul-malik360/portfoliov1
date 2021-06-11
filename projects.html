@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What they've got to say</title>
+    <link rel="stylesheet" href="/styles/projects.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+
+    <script
+      src="https://kit.fontawesome.com/ab6051d3ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <a href="./index.html" class="navbar-anchor"
+            ><i class="fas fa-home tooltip"
+              ><span class="tooltiptext">HOME</span></i
+            >
+          </a>
+        </li>
+        <li class="navbar-link">
+          <a href="./about.html" class="navbar-anchor"
+            ><i class="fas fa-address-card tooltip"
+              ><span class="tooltiptext">ABOUT</span></i
+            >
+          </a>
+        </li>
+        <li class="navbar-link">
+          <a href="./portfolio.html" class="navbar-anchor"
+            ><i class="fas fa-briefcase tooltip"
+              ><span class="tooltiptext">PORFOLIO</span></i
+            >
+          </a>
+        </li>
+        <li class="navbar-link">
+          <a href="./testimonials.html" class="navbar-anchor"
+            ><i class="fas fa-quote-left tooltip"
+              ><span class="tooltiptext">TESTIMONIALS</span></i
+            >
+          </a>
+        </li>
+        <li class="navbar-link">
+          <a href="./contact.html" class="navbar-anchor"
+            ><i class="fas fa-envelope tooltip"
+              ><span class="tooltiptext">CONTACT ME</span></i
+            >
+          </a>
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="portfolio">
+      <div class="projdetails">
+        <h1>My <span class="headcolor"> Projects </span></h1>
+        <div class="card">
+          <div class="content_img">
+            <img
+              class="clickpic"
+              onclick="toggleModal('timeline-modal')"
+              src="/images/click timeline.PNG"
+              alt=""
+            />
+            <div>See My Timeline</div>
+          </div>
+
+          <div class="content_img">
+            <img
+              class="clickpic"
+              onclick="toggleModal('testimonial-modal')"
+              src="/images/click testimonials.PNG"
+              alt=""
+            />
+            <div>See My Testimonial</div>
+          </div>
+
+          <div class="content_img">
+            <img
+              class="clickpic"
+              onclick="toggleModal('projects-card-modal')"
+              src="/images/click project card.PNG"
+              alt=""
+            />
+            <div>See My Projects Card</div>
+          </div>
+
+          <div class="content_img">
+            <img
+              class="clickpic"
+              onclick="toggleModal('sneaker-site-modal')"
+              src="/images/click sneaker site.PNG"
+              alt=""
+            />
+            <div>See My Sneaker Site</div>
+          </div>
+
+          <div class="content_img">
+            <img
+              class="clickpic"
+              onclick="toggleModal('add-numbers-modal')"
+              src="/images/my adding numbers.PNG"
+              alt=""
+            />
+            <div>See My Adding Numbers Calculator</div>
+          </div>
+
+          <div class="content_img">
+            <img
+              class="clickpic"
+              onclick="toggleModal('temperature-converter-modal')"
+              src="/images/click temperature converter.PNG"
+              alt=""
+            />
+            <div>See My Temperature Converter</div>
+          </div>
+
+          <div class="content_img">
+            <img
+              class="clickpic"
+              onclick="toggleModal('contact-form-modal')"
+              src="/images/click contact form.PNG"
+              alt=""
+            />
+            <div>See My Contact Form</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="contactme">
+        <button class="footerbtn">
+          <a href="/contact.html" target="_blank" class="footerbtntxt"
+            >Let's Work Together</a
+          >
+        </button>
+      </div>
+
+      <div class="footertxt">
+        <i class="far fa-copyright"></i> Made with
+        <i class="far fa-heart"></i> by Abdul-Malik Mohamed
+      </div>
+
+      <div class="links">
+        <a href="https://github.com/abdul-malik360" target="_blank"
+          ><i class="fab fa-github fbtns"></i
+        ></a>
+        <a href="https://codepen.io/abdul-malik360" target="_blank"
+          ><i class="fab fa-codepen fbtns"></i
+        ></a>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

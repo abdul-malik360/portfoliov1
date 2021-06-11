@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #457b9d;
+}
+
+.projdetails {
+  background: white;
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 5px;
+  margin: 50px;
+  height: 100%;
+}
+
+h1 {
+  font-size: 80px;
+  color: #1d3557;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.headcolor {
+  color: #a8dadc;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+
+  padding: 50px;
+}
+
+/* Parent Container */
+.content_img {
+  position: relative;
+}
+
+/* Child Text Container */
+.content_img div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover {
+  cursor: pointer;
+}
+
+.content_img:hover div {
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.footertxt {
+  color: #1d3557;
+  font-family: sans-serif;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 5%;
+}
+
+.fbtns {
+  font-size: 20px;
+  text-decoration: none;
+  color: #1d3557;
+}
+.fbtns:hover {
+  color: #a8dadc;
+}
+.footerbtn {
+  color: #1d3557;
+  border: 2px solid #1d3557;
+  background: none;
+
+  border-radius: 50px;
+  width: 10vw;
+  transition: 0.6s;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.footerbtn:hover {
+  background: none;
+  border: 2px solid #a8dadc;
+  border-radius: 50px;
+  width: 10vw;
+  transition: 0.6s;
+}
+
+.footerbtntxt {
+  text-decoration: none;
+  color: #1d3557;
+  transition: 0.6s;
+}
+.footerbtntxt:hover {
+  text-decoration: none;
+  color: #a8dadc;
+  transition: 0.6s;
+}
